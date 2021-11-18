@@ -1,6 +1,6 @@
 <?php
 
-namespace LaraCrafts\UrlShortener\Tests\Unit\Http;
+namespace Hatchet\UrlShortener\Tests\Unit\Http;
 
 use function GuzzleHttp\choose_handler;
 use GuzzleHttp\Client;

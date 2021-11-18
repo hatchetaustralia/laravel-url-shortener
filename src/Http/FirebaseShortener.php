@@ -1,6 +1,6 @@
 <?php
 
-namespace LaraCrafts\UrlShortener\Http;
+namespace Hatchet\UrlShortener\Http;
 
 use GuzzleHttp\ClientInterface;
 use function GuzzleHttp\json_decode;

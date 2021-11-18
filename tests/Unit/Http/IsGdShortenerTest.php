@@ -1,14 +1,14 @@
 <?php
 
-namespace LaraCrafts\UrlShortener\Tests\Unit\Http;
+namespace Hatchet\UrlShortener\Tests\Unit\Http;
 
 use GuzzleHttp\Exception\ClientException;
-use LaraCrafts\UrlShortener\Http\IsGdShortener;
+use Hatchet\UrlShortener\Http\IsGdShortener;
 
 class IsGdShortenerTest extends HttpTestCase
 {
     /**
-     * @var \LaraCrafts\UrlShortener\Http\IsGdShortener
+     * @var \Hatchet\UrlShortener\Http\IsGdShortener
      */
     protected $shortener;
 

@@ -2,11 +2,11 @@
 Powerful URL shortening tools in Laravel
 
 <p align="center">
-    <a href="https://travis-ci.org/LaraCrafts/laravel-url-shortener"><img src="https://travis-ci.org/LaraCrafts/laravel-url-shortener.svg?branch=master"></a>
-    <a href="https://packagist.org/packages/laracrafts/laravel-url-shortener"><img src="https://poser.pugx.org/laracrafts/laravel-url-shortener/downloads"></a>
-    <a href="https://packagist.org/packages/laracrafts/laravel-url-shortener"><img src="https://poser.pugx.org/laracrafts/laravel-url-shortener/version"></a>
-    <a href="https://scrutinizer-ci.com/g/LaraCrafts/laravel-url-shortener/"><img src="https://scrutinizer-ci.com/g/LaraCrafts/laravel-url-shortener/badges/coverage.png?b=master"></a>
-    <a href="https://packagist.org/packages/laracrafts/laravel-url-shortener"><img src="https://poser.pugx.org/laracrafts/laravel-url-shortener/license"></a>
+    <a href="https://travis-ci.org/Hatchet/laravel-url-shortener"><img src="https://travis-ci.org/Hatchet/laravel-url-shortener.svg?branch=master"></a>
+    <a href="https://packagist.org/packages/hatchetaustralia/laravel-url-shortener"><img src="https://poser.pugx.org/hatchetaustralia/laravel-url-shortener/downloads"></a>
+    <a href="https://packagist.org/packages/hatchetaustralia/laravel-url-shortener"><img src="https://poser.pugx.org/hatchetaustralia/laravel-url-shortener/version"></a>
+    <a href="https://scrutinizer-ci.com/g/Hatchet/laravel-url-shortener/"><img src="https://scrutinizer-ci.com/g/Hatchet/laravel-url-shortener/badges/coverage.png?b=master"></a>
+    <a href="https://packagist.org/packages/hatchetaustralia/laravel-url-shortener"><img src="https://poser.pugx.org/hatchetaustralia/laravel-url-shortener/license"></a>
 </p>
 
 - [Installation](#installation)
@@ -35,7 +35,7 @@ Powerful URL shortening tools in Laravel
 You can easily install this package using Composer, by running the following command:
 
 ```bash
-composer require laracrafts/laravel-url-shortener
+composer require hatchetaustralia/laravel-url-shortener
 ```
 
 ### Requirements
@@ -54,7 +54,7 @@ this by adding the following line to your `config/app.php` file:
 ```php
 'providers' => [
    ...
-   LaraCrafts\UrlShortener\UrlShortenerServiceProvider::class,
+   Hatchet\UrlShortener\UrlShortenerServiceProvider::class,
    ...
 ],
 ```

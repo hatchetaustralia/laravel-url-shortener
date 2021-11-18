@@ -1,11 +1,11 @@
 <?php
 
-namespace LaraCrafts\UrlShortener\Tests\Integration;
+namespace Hatchet\UrlShortener\Tests\Integration;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Promise\PromiseInterface;
-use LaraCrafts\UrlShortener\Http\BitLyShortener;
-use LaraCrafts\UrlShortener\Tests\Concerns\HasUrlAssertions;
+use Hatchet\UrlShortener\Http\BitLyShortener;
+use Hatchet\UrlShortener\Tests\Concerns\HasUrlAssertions;
 use PHPUnit\Framework\TestCase;
 
 class BitLyShortenerTest extends TestCase
@@ -13,7 +13,7 @@ class BitLyShortenerTest extends TestCase
     use HasUrlAssertions;
 
     /**
-     * @var \LaraCrafts\UrlShortener\Http\BitLyShortener
+     * @var \Hatchet\UrlShortener\Http\BitLyShortener
      */
     protected $shortener;
 

@@ -19,7 +19,7 @@ Vary: Origin,Accept-Encoding
 Transfer-Encoding: chunked
 
 {
-  "shortLink": "https://laracrafts.page.link/NLtk",
-  "previewLink": "https://laracrafts.page.link/NLtk?d=1"
+  "shortLink": "https://hatchetaustralia.page.link/NLtk",
+  "previewLink": "https://hatchetaustralia.page.link/NLtk?d=1"
 }
 '));

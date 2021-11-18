@@ -1,14 +1,14 @@
 <?php
 
-namespace LaraCrafts\UrlShortener\Tests\Unit\Http;
+namespace Hatchet\UrlShortener\Tests\Unit\Http;
 
 use GuzzleHttp\Exception\ClientException;
-use LaraCrafts\UrlShortener\Http\FirebaseShortener;
+use Hatchet\UrlShortener\Http\FirebaseShortener;
 
 class FirebaseShortenerTest extends HttpTestCase
 {
     /**
-     * @var \LaraCrafts\UrlShortener\Http\FirebaseShortener
+     * @var \Hatchet\UrlShortener\Http\FirebaseShortener
      */
     protected $shortener;
 
@@ -44,7 +44,7 @@ class FirebaseShortenerTest extends HttpTestCase
         $expected = '{"dynamicLinkInfo":{"domainUriPrefix":"URI_PREFIX","link":"https:\/\/google.com"},"suffix":{"option":"SHORT"}}';
         $this->assertJsonStringEqualsJsonString($expected, $request->getBody()->getContents());
 
-        $this->assertEquals('https://laracrafts.page.link/NLtk', $shortenedUrl);
+        $this->assertEquals('https://hatchetaustralia.page.link/NLtk', $shortenedUrl);
     }
 
     /**
