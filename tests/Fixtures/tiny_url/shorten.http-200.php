@@ -1,9 +1,7 @@
 <?php
 
-use function GuzzleHttp\Psr7\parse_response;
-
-return parse_response(trim('
-HTTP/2 200 
+return \GuzzleHttp\Psr7\Message::parseResponse(trim('
+HTTP/2 200
 date: Sun, 09 Jun 2019 21:20:18 GMT
 content-type: text/plain;charset=UTF-8
 content-length: 24

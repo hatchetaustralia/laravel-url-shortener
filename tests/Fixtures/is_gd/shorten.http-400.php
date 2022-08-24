@@ -1,8 +1,6 @@
 <?php
 
-use function GuzzleHttp\Psr7\parse_response;
-
-return parse_response(trim('
+return \GuzzleHttp\Psr7\Message::parseResponse(trim('
 HTTP/2 400
 date: Sat, 01 Jun 2019 07:06:24 GMT
 content-type: text/html; charset=UTF-8

@@ -1,9 +1,7 @@
 <?php
 
-use function GuzzleHttp\Psr7\parse_response;
-
-return parse_response(trim('
-HTTP/2 200 
+return \GuzzleHttp\Psr7\Message::parseResponse(trim('
+HTTP/2 200
 date: Sat, 15 Jun 2019 11:42:59 GMT
 content-type: text/html; charset=UTF-8
 set-cookie: __cfduid=d42d736f9ab5f6d72dbd1cdcd507ccda81560598978; expires=Sun, 14-Jun-20 11:42:58 GMT; path=/; domain=.ouo.io; HttpOnly; Secure

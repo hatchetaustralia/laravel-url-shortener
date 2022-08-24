@@ -21,8 +21,6 @@ class RedirectsTo extends Constraint
      */
     public function __construct($destination, int $redirects = 1)
     {
-        parent::__construct();
-
         $this->client = new Client();
         $this->destination = rtrim($destination, '/');
         $this->redirects = $redirects;
@@ -31,7 +29,7 @@ class RedirectsTo extends Constraint
     /**
      * {@inheritDoc}
      */
-    public function evaluate($other, $description = '', $returnResult = false)
+    public function evaluate($other, $description = '', $returnResult = false): ?bool
     {
         $stack = [];
 
@@ -51,6 +49,8 @@ class RedirectsTo extends Constraint
         if (!$this->matches($actual = $stack[$this->redirects])) {
             $this->fail($actual, "Expected $this->destination, received $actual");
         }
+
+        return true;
     }
 
     /**
@@ -66,6 +66,6 @@ class RedirectsTo extends Constraint
      */
     public function toString(): string
     {
-        return 'redirects to ' . $this->exporter->export($this->destination);
+        return 'redirects to ' . $this->exporter()->export($this->destination);
     }
 }

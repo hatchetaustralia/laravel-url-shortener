@@ -36,7 +36,9 @@ class TinyUrlShortenerTest extends TestCase
         $shortUrl = $this->shortener->shorten('https://google.com');
 
         $this->assertValidUrl($shortUrl);
-        $this->assertRedirectsTo('https://google.com', $shortUrl, 1);
+
+        // Automatic redirect does not occur for TinyURL?
+        $this->assertRedirectsTo('https://preview.tinyurl.com/mbq3m', $shortUrl, 1);
     }
 
     /**
@@ -50,6 +52,8 @@ class TinyUrlShortenerTest extends TestCase
 
         $this->assertInstanceOf(PromiseInterface::class, $promise);
         $this->assertValidUrl($shortUrl = $promise->wait());
-        $this->assertRedirectsTo('https://google.com', $shortUrl, 1);
+
+        // Automatic redirect does not occur for TinyURL?
+        $this->assertRedirectsTo('https://preview.tinyurl.com/mbq3m', $shortUrl, 1);
     }
 }

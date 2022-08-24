@@ -1,8 +1,6 @@
 <?php
 
-use function GuzzleHttp\Psr7\parse_response;
-
-return parse_response(trim('
+return \GuzzleHttp\Psr7\Message::parseResponse(trim('
 HTTP/1.1 200 OK
 Date: Fri, 07 Jun 2019 20:19:33 GMT
 Content-Type: application/json

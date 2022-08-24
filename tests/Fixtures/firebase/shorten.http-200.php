@@ -1,8 +1,6 @@
 <?php
 
-use function GuzzleHttp\Psr7\parse_response;
-
-return parse_response(trim('
+return \GuzzleHttp\Psr7\Message::parseResponse(trim('
 HTTP/1.1 200 OK
 Content-Type: application/json; charset=UTF-8
 Vary: X-Origin
